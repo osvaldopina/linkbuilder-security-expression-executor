@@ -71,7 +71,7 @@ then
     echo "deploying snapshot..."
     echo ""
     echo "*********************"
-    mvn deploy --settings travis-ci-maven-settings.xml -Dgpg.skip=true
+    mvn -X deploy --settings travis-ci-maven-settings.xml -Dgpg.skip=true
 else
     echo "**************************************"
     echo ""
